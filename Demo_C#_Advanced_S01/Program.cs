@@ -6,6 +6,10 @@ namespace Demo_C__Advanced_S01
     {
         static void Main(string[] args)
         {
+
+            #region Generics [Swap Example]
+
+
             #region Non_Generics
 
             //int A=10, B=20;
@@ -64,6 +68,16 @@ namespace Demo_C__Advanced_S01
             //Console.WriteLine($"P02 = {P02}");
 
             #endregion
+
+            #endregion
+
+            #region NoN_Generics [Search Example]
+            int[] arr = { 10, 20, 30, 54, 5, 58, 85, 5, 8, 9, 8, 8, 8, 47 };
+            int Index = Helper.SearchArray(arr, 54);
+            Console.WriteLine($"Index 54 Is {Index} ");
+
+            #endregion
+
 
         }
     }
