@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo_C__Advanced_S01.Generic
 {
-    public class Employee
+    public class Employee:IComparable
     {
 
         #region Property
@@ -66,6 +66,19 @@ namespace Demo_C__Advanced_S01.Generic
             return HashCode.Combine(this.Id, this.Name,this.Salary);
            
         }
+
+        public int CompareTo(object? obj)
+        {
+            if (obj is not null)
+            {
+                Employee employee = (Employee)obj;
+                return this.Salary.CompareTo(employee.Salary);  
+
+            }
+            return -1;
+        }
+
+
 
         #endregion
     }

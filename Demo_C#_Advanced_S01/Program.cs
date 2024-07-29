@@ -141,25 +141,49 @@ namespace Demo_C__Advanced_S01
             #endregion
 
             #region Not Generics [BubbleSort Example]
-            int[] arr = { 10, 258, 4, 878, 14, 55, 14 };
-            Console.WriteLine("Without Bubble Sorting"); 
-            foreach (int i in arr)
-            {
-                Console.Write(" " + i);//  10 258 4 878 14 55 14
-            }
-            Helper.BubbleSort(arr);
-            Console.WriteLine(" \n\nWith Bubble Sorting");
-            foreach (int i in arr)
-            {
-                Console.Write(" " + i);//   4 10 14 14 55 258 878
-            }
+            ////int[] arr = { 10, 258, 4, 878, 14, 55, 14 };
+            ////Console.WriteLine("Without Bubble Sorting"); 
+            ////foreach (int i in arr)
+            ////{
+            ////    Console.Write(" " + i);//  10 258 4 878 14 55 14
+            ////}
+            ////Helper.BubbleSort(arr);
+            ////Console.WriteLine(" \n\nWith Bubble Sorting");
+            ////foreach (int i in arr)
+            ////{
+            ////    Console.Write(" " + i);//   4 10 14 14 55 258 878
+
 
 
 
             #endregion
 
 
+            #region Generics [BubbleSort Example]
+
+            Employee[] employees = new Employee[]
+ {
+            new Employee(){Id=10,Name="Hazem",Salary=20000},
+            new Employee(){Id=20,Name="Fady",Salary=30000},
+             new Employee(){Id=40,Name="Khalil",Salary=50000},
+            new Employee(){Id=30,Name="Mohamed",Salary=40000}
+
+ };
+
+            Helper<Employee>.BubbleSort(employees);
+
+            foreach (Employee employee in employees)
+
+            {
+                Console.WriteLine(employee);
+
+            }
+
+
+
+            #endregion
 
         }
     }
 }
+
