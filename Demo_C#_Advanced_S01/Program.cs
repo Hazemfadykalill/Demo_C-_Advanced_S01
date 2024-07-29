@@ -161,23 +161,23 @@ namespace Demo_C__Advanced_S01
 
             #region Generics [BubbleSort Example]
 
-            Employee[] employees = new Employee[]
- {
-            new Employee(){Id=10,Name="Hazem",Salary=20000},
-            new Employee(){Id=20,Name="Fady",Salary=30000},
-             new Employee(){Id=40,Name="Khalil",Salary=50000},
-            new Employee(){Id=30,Name="Mohamed",Salary=40000}
+ //           Employee[] employees = new Employee[]
+ //{
+ //           new Employee(){Id=10,Name="Hazem",Salary=20000},
+ //           new Employee(){Id=20,Name="Fady",Salary=30000},
+ //            new Employee(){Id=40,Name="Khalil",Salary=50000},
+ //           new Employee(){Id=30,Name="Mohamed",Salary=40000}
 
- };
+ //};
 
-            Helper<Employee>.BubbleSort(employees);
+ //           Helper<Employee>.BubbleSort(employees);
 
-            foreach (Employee employee in employees)
+ //           foreach (Employee employee in employees)
 
-            {
-                Console.WriteLine(employee);
+ //           {
+ //               Console.WriteLine(employee);
 
-            }
+ //           }
 
 
 

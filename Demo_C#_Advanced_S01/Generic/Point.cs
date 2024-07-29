@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo_C__Advanced_S01.Generic
 {
-    internal class Point
+    internal class Point:IComparable<Point>
     {
         public Point(int x, int y)
         {
@@ -16,6 +16,14 @@ namespace Demo_C__Advanced_S01.Generic
 
         public int X { get; set; }
         public int Y { get; set; }
+
+        public int CompareTo(Point? other)
+        {
+            if (other == null) return 1;
+            if (X == other.X) return Y.CompareTo(other.Y);
+            else return X.CompareTo(other.X);
+
+        }
 
         public override string ToString()
         {

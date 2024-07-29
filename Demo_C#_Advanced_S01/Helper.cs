@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Demo_C__Advanced_S01
 {
-    public class Helper<T> where T : IComparable
+    public class Helper<T> where T : IComparable<T>
     {
 
         #region Generics And Non_Generics [Swap  Example]
