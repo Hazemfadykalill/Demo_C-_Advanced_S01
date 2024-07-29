@@ -71,21 +71,28 @@ namespace Demo_C__Advanced_S01
 
         #endregion
 
-        #region Generic [Search Example]
-        public static int SearchArray(T[] arr, T value)
-        {
-            if (arr is not null)
-            {
-                for (int i = 0; i < arr.Length; i++)
+        #region Generic [Search Example With Equal And Use Struct With It ]
+        //public static int SearchArray(T[] arr, T value)
+        //{
+        //    if (arr is not null)
+        //    {
+        //        for (int i = 0; i < arr.Length; i++)
 
-                    if (arr[i].Equals( value))// arr[i] == value ===> Invalid
-                        return i;
+        //            if (arr[i].Equals( value))// arr[i] == value ===> Invalid because == Not define In All User defined dateType Ex Struct ...
+        //                return i;
 
-            }
+        //    }
 
-            return -1;
+        //    return -1;
 
-        }
+        //}
+        #endregion
+
+
+        #region Generics [Search  Example With Class ]
+
+
+
         #endregion
         #endregion
 

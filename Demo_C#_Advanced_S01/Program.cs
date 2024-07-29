@@ -93,21 +93,52 @@ namespace Demo_C__Advanced_S01
             ///}
 
 
-           //Employee employee01 = new Employee() { Id=10,Name="Aliaa",Salary=1000};
-           //Employee employee02 = new Employee() { Id=11,Name="Hazem",Salary=12000};
-           //Employee employee03 = new Employee() { Id=12,Name="fady",Salary=13000};
-           //Employee employee04 = new Employee() { Id = 11, Name = "Hazem", Salary = 12000 };
-           // Employee[] employee = new Employee[2]
-           // {
-           //     employee01, employee02
-           // };
+            //Employee employee01 = new Employee() { Id=10,Name="Aliaa",Salary=1000};
+            //Employee employee02 = new Employee() { Id=11,Name="Hazem",Salary=12000};
+            //Employee employee03 = new Employee() { Id=12,Name="fady",Salary=13000};
+            //Employee employee04 = new Employee() { Id = 11, Name = "Hazem", Salary = 12000 };
+            // Employee[] employee = new Employee[2]
+            // {
+            //     employee01, employee02
+            // };
 
-           // int Index = Helper<Employee>.SearchArray(employee, employee03);
-           // Console.WriteLine($"Index employee03 is {Index} ");
+            // int Index = Helper<Employee>.SearchArray(employee, employee03);
+            // Console.WriteLine($"Index employee03 is {Index} ");
 
-           // int Index02 = Helper<Employee>.SearchArray(employee, employee04);
-           // Console.WriteLine($"Index employee04 is {Index02} ");
+            // int Index02 = Helper<Employee>.SearchArray(employee, employee04);
+            // Console.WriteLine($"Index employee04 is {Index02} ");
             #endregion
+
+            #region Generics [Search With Class ]
+
+            ////Employee employee01 = new Employee() { Id=10,Name="Aliaa",Salary=1000};
+            ////Employee employee02 = new Employee() { Id=11,Name="Hazem",Salary=12000};
+            ////Employee employee03 = new Employee() { Id=11,Name="Hazem",Salary=12000};
+
+
+            ///if (employee03==employee02)//employee01==employee02 ===>valid because ==  define in user defined class
+            ///                           // == Compare  between Two References
+            ///{
+            ///    Console.WriteLine("Equal");
+            ///}
+            ///else
+            ///{
+            ///    Console.WriteLine(" Not Equal");
+            ///}
+
+            ///if (employee03.Equals(employee02))
+
+            ///{
+            ///    Console.WriteLine("Equal");
+            ///}
+            ///else
+            ///{
+            ///    Console.WriteLine(" Not Equal");
+            ///}
+
+            ///Console.WriteLine($"Get HashCode E02 is {employee02}");//  12000
+            ///Console.WriteLine($"Get HashCode E03 is {employee03}");//  12000
+           #endregion
 
 
 
