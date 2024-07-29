@@ -33,6 +33,8 @@ namespace Demo_C__Advanced_S01.Generic
         //    return !left.Equals(right);//true
         //}
         #endregion
+
+
         #region Method
         public override string ToString()
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Demo_C__Advanced_S01
 {
-    internal class Helper<T>
+    internal class Helper
     {
 
         #region Generics And Non_Generics [Swap  Example]
@@ -40,7 +40,7 @@ namespace Demo_C__Advanced_S01
         #endregion
 
         #region Generics
-        public static void Swap(ref T X, ref T y)
+        public static void Swap<T>(ref T X, ref T y)
         {
             T Temp = X;
             X = y;
@@ -89,7 +89,25 @@ namespace Demo_C__Advanced_S01
         #endregion
 
 
-        #region Generics [Search  Example With Class ]
+        #region Generics [Sort Array By Use Bubble Sort And Without Non_Generic ]
+        public static void BubbleSort(int[] arr)
+        {
+            if(arr is not null)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    for (int k = 0; k < arr.Length-i-1; k++)
+                    {
+                        if (arr[k] > arr[k+1])
+                        {
+                            Helper.Swap(ref arr[k], ref arr[k+1]);
+                        }
+                    }
+
+                }
+            }
+        }
+
 
 
 

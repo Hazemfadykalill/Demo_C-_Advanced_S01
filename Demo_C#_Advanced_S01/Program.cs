@@ -138,7 +138,25 @@ namespace Demo_C__Advanced_S01
 
             ///Console.WriteLine($"Get HashCode E02 is {employee02}");//  12000
             ///Console.WriteLine($"Get HashCode E03 is {employee03}");//  12000
-           #endregion
+            #endregion
+
+            #region Not Generics [BubbleSort Example]
+            int[] arr = { 10, 258, 4, 878, 14, 55, 14 };
+            Console.WriteLine("Without Bubble Sorting"); 
+            foreach (int i in arr)
+            {
+                Console.Write(" " + i);//  10 258 4 878 14 55 14
+            }
+            Helper.BubbleSort(arr);
+            Console.WriteLine(" \n\nWith Bubble Sorting");
+            foreach (int i in arr)
+            {
+                Console.Write(" " + i);//   4 10 14 14 55 258 878
+            }
+
+
+
+            #endregion
 
 
 
